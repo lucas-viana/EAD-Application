@@ -1,0 +1,89 @@
+{
+  "id": "m03",
+  "order": 3,
+  "title": "Navegação e pesquisa na internet",
+  "shortTitle": "Internet e pesquisa",
+  "objective": "Acessar páginas e realizar pesquisas simples, observando a origem das informações.",
+  "credits": "Conteúdo do módulo: Equipe 3 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m03.mp3",
+    "title": "Navegação e pesquisa na internet",
+    "summary": "Navegador, pesquisa e verificação de informações em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Acessando páginas",
+        "text": "O navegador abre páginas da internet. A barra de endereços recebe o endereço do site. Links levam a outras páginas; abas permitem manter mais de uma página aberta. Voltar retorna à página anterior e atualizar carrega novamente a página atual. Ao abrir um endereço institucional no navegador, um link pode levar a outra seção. O botão Voltar retorna à página visitada anteriormente."
+      },
+      {
+        "heading": "Realizando uma pesquisa",
+        "text": "Uma busca usa palavras que descrevem o assunto desejado. Termos mais específicos ajudam a reduzir resultados pouco relacionados. O título e a descrição de cada resultado dão pistas sobre o conteúdo antes de abrir a página. A busca “curso gratuito de informática básica” reúne muitas opções. Acrescentar “Pouso Alegre” torna os resultados mais relacionados à cidade."
+      },
+      {
+        "heading": "Verificando uma informação",
+        "text": "A autoria, a instituição responsável e a data ajudam a contextualizar uma informação. Comparar fontes permite perceber divergências. A primeira posição na busca e um anúncio patrocinado não garantem que o conteúdo seja confiável. Dois sites podem apresentar informações diferentes sobre o mesmo tema. Identificar a instituição e conferir a data ajuda a entender o contexto de cada publicação."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Do endereço à informação confiável",
+    "main": {
+      "title": "Navegador",
+      "text": "Programa que abre páginas da internet, com barra de endereços, links e abas."
+    },
+    "items": [
+      { "title": "Acessar", "text": "A barra de endereços recebe o endereço do site; links levam a outras páginas.", "tag": "Passo 1" },
+      { "title": "Pesquisar", "text": "Palavras específicas reduzem resultados pouco relacionados.", "tag": "Passo 2" },
+      { "title": "Verificar", "text": "Autoria, instituição e data ajudam a contextualizar a informação.", "tag": "Passo 3" }
+    ],
+    "highlight": {
+      "title": "Comparar antes de confiar",
+      "text": "A primeira posição na busca e um anúncio patrocinado não garantem que o conteúdo seja confiável."
+    },
+    "longDescription": "O navegador aparece como ponto de partida. Três passos seguem em sequência: acessar uma página pela barra de endereços, pesquisar com palavras específicas e verificar a informação pela autoria, instituição e data. Um destaque lembra que posição na busca e anúncios não garantem confiabilidade."
+  },
+  "lessons": [
+    {
+      "id": "m03-a01",
+      "moduleId": "m03",
+      "order": 1,
+      "title": "Acessando páginas",
+      "topics": "Função do navegador; barra de endereços; links; abas; voltar e atualizar.",
+      "description": "O navegador abre páginas da internet. A barra de endereços recebe o endereço do site. Links levam a outras páginas; abas permitem manter mais de uma página aberta. Voltar retorna à página anterior e atualizar carrega novamente a página atual.",
+      "workedExample": "Ao abrir um endereço institucional no navegador, um link pode levar a outra seção. O botão Voltar retorna à página visitada anteriormente.",
+      "supportHeading": "Navegador, endereços, links e abas",
+      "videoId": "m03-a01",
+      "videoCover": { "title": "Barra de endereços", "caption": "Links  ·  Abas  ·  Voltar  ·  Atualizar" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m03-a02",
+      "moduleId": "m03",
+      "order": 2,
+      "title": "Realizando uma pesquisa",
+      "topics": "Endereço e termo de pesquisa; palavras-chave; títulos e descrições dos resultados.",
+      "description": "Uma busca usa palavras que descrevem o assunto desejado. Termos mais específicos ajudam a reduzir resultados pouco relacionados. O título e a descrição de cada resultado dão pistas sobre o conteúdo antes de abrir a página.",
+      "workedExample": "A busca “curso gratuito de informática básica” reúne muitas opções. Acrescentar “Pouso Alegre” torna os resultados mais relacionados à cidade.",
+      "supportHeading": "Palavras-chave e resultados",
+      "videoId": "m03-a02",
+      "videoCover": { "title": "curso gratuito de informática básica", "caption": "+ Pouso Alegre" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m03-a03",
+      "moduleId": "m03",
+      "order": 3,
+      "title": "Verificando uma informação",
+      "topics": "Instituição ou autoria; data, quando disponível; comparação de fontes; resultados patrocinados.",
+      "description": "A autoria, a instituição responsável e a data ajudam a contextualizar uma informação. Comparar fontes permite perceber divergências. A primeira posição na busca e um anúncio patrocinado não garantem que o conteúdo seja confiável.",
+      "workedExample": "Dois sites podem apresentar informações diferentes sobre o mesmo tema. Identificar a instituição e conferir a data ajuda a entender o contexto de cada publicação.",
+      "supportHeading": "Autoria, data e comparação de fontes",
+      "videoId": "m03-a03",
+      "videoCover": { "title": "Quem publicou? Quando?", "caption": "Autoria  ·  Data  ·  Comparação" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

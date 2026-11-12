@@ -1,0 +1,89 @@
+{
+  "id": "m01",
+  "order": 1,
+  "title": "Primeiros passos no computador",
+  "shortTitle": "Primeiros passos no computador",
+  "objective": "Reconhecer os principais componentes e utilizar mouse e teclado para ações básicas.",
+  "credits": "Conteúdo do módulo: Equipe 1 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m01.mp3",
+    "title": "Primeiros passos no computador",
+    "summary": "Componentes do computador, mouse e teclado em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Conhecendo o computador",
+        "text": "O monitor apresenta as informações. O teclado permite digitar e o mouse movimenta o ponteiro. Em um computador de mesa, o gabinete reúne componentes internos; no notebook, essas partes ficam integradas. O botão de energia liga o equipamento. No computador de mesa, a imagem aparece no monitor e o mouse controla o ponteiro. No notebook, a tela e o teclado fazem parte do mesmo equipamento."
+      },
+      {
+        "heading": "Utilizando o mouse",
+        "text": "Um clique seleciona um item. Dois cliques rápidos podem abrir arquivos e pastas. O botão direito apresenta opções relacionadas ao item. A roda do mouse desloca a página, e arrastar move um objeto enquanto o botão permanece pressionado. Ao selecionar uma pasta, um clique a destaca. Um clique com o botão direito mostra um menu com opções para aquele item."
+      },
+      {
+        "heading": "Utilizando o teclado",
+        "text": "A barra de espaço separa palavras. Enter inicia uma nova linha e Backspace apaga o caractere anterior. Shift permite digitar uma letra maiúscula; Caps Lock mantém as letras em maiúsculas até ser desativado. Na frase “Meu primeiro texto”, Shift permite a letra inicial maiúscula. Backspace corrige a última letra digitada e Enter inicia outro parágrafo."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Cada parte tem uma função",
+    "main": {
+      "title": "Computador",
+      "text": "Monitor, teclado e mouse trabalham juntos para mostrar informações e receber comandos."
+    },
+    "items": [
+      { "title": "Monitor", "text": "Apresenta as informações na tela.", "tag": "Mostra" },
+      { "title": "Teclado", "text": "Permite digitar letras, números e comandos como Enter e Backspace.", "tag": "Digita" },
+      { "title": "Mouse", "text": "Movimenta o ponteiro: clique, clique duplo, botão direito e rolagem.", "tag": "Aponta" }
+    ],
+    "highlight": {
+      "title": "Computador de mesa ou notebook",
+      "text": "No computador de mesa, o gabinete reúne os componentes internos. No notebook, tela, teclado e componentes ficam integrados."
+    },
+    "longDescription": "No centro, o computador. Ao redor, três partes e suas funções: o monitor apresenta as informações, o teclado permite digitar e o mouse movimenta o ponteiro. Um destaque compara o computador de mesa, com gabinete separado, e o notebook, em que as partes ficam integradas."
+  },
+  "lessons": [
+    {
+      "id": "m01-a01",
+      "moduleId": "m01",
+      "order": 1,
+      "title": "Conhecendo o computador",
+      "topics": "Funções de monitor, gabinete, teclado e mouse; diferenças básicas entre computador de mesa e notebook; botão de energia.",
+      "description": "O monitor apresenta as informações. O teclado permite digitar e o mouse movimenta o ponteiro. Em um computador de mesa, o gabinete reúne componentes internos; no notebook, essas partes ficam integradas. O botão de energia liga o equipamento.",
+      "workedExample": "No computador de mesa, a imagem aparece no monitor e o mouse controla o ponteiro. No notebook, a tela e o teclado fazem parte do mesmo equipamento.",
+      "supportHeading": "Partes do computador",
+      "videoId": "m01-a01",
+      "videoCover": { "title": "Monitor, teclado e mouse", "caption": "Computador de mesa  ·  Notebook" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m01-a02",
+      "moduleId": "m01",
+      "order": 2,
+      "title": "Utilizando o mouse",
+      "topics": "Ponteiro, clique simples, clique duplo, botão direito, rolagem e ação de arrastar.",
+      "description": "Um clique seleciona um item. Dois cliques rápidos podem abrir arquivos e pastas. O botão direito apresenta opções relacionadas ao item. A roda do mouse desloca a página, e arrastar move um objeto enquanto o botão permanece pressionado.",
+      "workedExample": "Ao selecionar uma pasta, um clique a destaca. Um clique com o botão direito mostra um menu com opções para aquele item.",
+      "supportHeading": "Ações do mouse",
+      "videoId": "m01-a02",
+      "videoCover": { "title": "Clique, clique duplo e botão direito", "caption": "Rolar  ·  Arrastar" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m01-a03",
+      "moduleId": "m01",
+      "order": 3,
+      "title": "Utilizando o teclado",
+      "topics": "Letras, números, espaço, Enter, Backspace, Shift e Caps Lock.",
+      "description": "A barra de espaço separa palavras. Enter inicia uma nova linha e Backspace apaga o caractere anterior. Shift permite digitar uma letra maiúscula; Caps Lock mantém as letras em maiúsculas até ser desativado.",
+      "workedExample": "Na frase “Meu primeiro texto”, Shift permite a letra inicial maiúscula. Backspace corrige a última letra digitada e Enter inicia outro parágrafo.",
+      "supportHeading": "Teclas principais",
+      "videoId": "m01-a03",
+      "videoCover": { "title": "Meu primeiro texto", "caption": "Espaço  ·  Enter  ·  Backspace  ·  Shift" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

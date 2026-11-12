@@ -1,0 +1,89 @@
+{
+  "id": "m06",
+  "order": 6,
+  "title": "Introdução às planilhas",
+  "shortTitle": "Planilhas",
+  "objective": "Organizar valores em uma tabela e calcular um total com fórmula simples.",
+  "credits": "Conteúdo do módulo: Equipe 6 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m06.mp3",
+    "title": "Introdução às planilhas",
+    "summary": "Células, tabela de despesas e fórmula de soma em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Conhecendo uma planilha",
+        "text": "Uma planilha organiza dados em linhas e colunas. A célula é o encontro de uma coluna com uma linha. A1 indica a coluna A e a linha 1. Textos identificam informações; números permitem cálculos. Na célula A1 aparece Item; em B1 aparece Valor. A linha seguinte começa um registro, como Caderno em A2 e 15 em B2."
+      },
+      {
+        "heading": "Organizando despesas",
+        "text": "Uma tabela simples pode ter as colunas Item e Valor. A largura da coluna precisa permitir a leitura do conteúdo. Destacar o cabeçalho ajuda a separar os títulos dos dados. O formato monetário apresenta valores em reais. A tabela registra Caderno — R$ 15,00; Caneta — R$ 5,00; Pasta — R$ 10,00. O cabeçalho em negrito diferencia os títulos dos itens."
+      },
+      {
+        "heading": "Calculando e atualizando o total",
+        "text": "Uma fórmula começa com o sinal de igual. Em =B2+B3+B4, cada referência aponta para uma célula que participa da soma. Se um desses valores muda, a fórmula recalcula o resultado automaticamente. Com B2=15, B3=5 e B4=10, a fórmula =B2+B3+B4 apresenta R$ 30,00. Se B3 muda para 7, o resultado passa a R$ 32,00."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Valores organizados, total automático",
+    "main": {
+      "title": "Planilha de despesas",
+      "text": "Colunas Item (A) e Valor (B); cada encontro de linha e coluna é uma célula."
+    },
+    "items": [
+      { "title": "Caderno", "text": "A2 · B2 = R$ 15,00", "tag": "Linha 2" },
+      { "title": "Caneta", "text": "A3 · B3 = R$ 5,00", "tag": "Linha 3" },
+      { "title": "Pasta", "text": "A4 · B4 = R$ 10,00", "tag": "Linha 4" }
+    ],
+    "highlight": {
+      "title": "=B2+B3+B4",
+      "text": "A fórmula soma as três células e apresenta R$ 30,00. Se B3 muda para 7, o total passa a R$ 32,00 automaticamente."
+    },
+    "longDescription": "Uma planilha de despesas com as colunas Item e Valor. Nas linhas 2 a 4 estão Caderno, R$ 15,00; Caneta, R$ 5,00; e Pasta, R$ 10,00. Um destaque mostra a fórmula =B2+B3+B4, que apresenta o total de R$ 30,00 e recalcula o resultado quando um valor muda."
+  },
+  "lessons": [
+    {
+      "id": "m06-a01",
+      "moduleId": "m06",
+      "order": 1,
+      "title": "Conhecendo uma planilha",
+      "topics": "Células, linhas, colunas; endereços A1 e B2; textos e números.",
+      "description": "Uma planilha organiza dados em linhas e colunas. A célula é o encontro de uma coluna com uma linha. A1 indica a coluna A e a linha 1. Textos identificam informações; números permitem cálculos.",
+      "workedExample": "Na célula A1 aparece Item; em B1 aparece Valor. A linha seguinte começa um registro, como Caderno em A2 e 15 em B2.",
+      "supportHeading": "Linhas, colunas e células",
+      "videoId": "m06-a01",
+      "videoCover": { "title": "A1: Item  ·  B1: Valor", "caption": "Linhas  ·  Colunas  ·  Células" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m06-a02",
+      "moduleId": "m06",
+      "order": 2,
+      "title": "Organizando despesas",
+      "topics": "Preenchimento, largura das colunas, destaque do cabeçalho e formatação monetária.",
+      "description": "Uma tabela simples pode ter as colunas Item e Valor. A largura da coluna precisa permitir a leitura do conteúdo. Destacar o cabeçalho ajuda a separar os títulos dos dados. O formato monetário apresenta valores em reais.",
+      "workedExample": "A tabela registra Caderno — R$ 15,00; Caneta — R$ 5,00; Pasta — R$ 10,00. O cabeçalho em negrito diferencia os títulos dos itens.",
+      "supportHeading": "Uma tabela de despesas",
+      "videoId": "m06-a02",
+      "videoCover": { "title": "Caderno R$ 15,00", "caption": "Caneta R$ 5,00  ·  Pasta R$ 10,00" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m06-a03",
+      "moduleId": "m06",
+      "order": 3,
+      "title": "Calculando e atualizando o total",
+      "topics": "Sinal de igual, referências a células, soma e atualização automática.",
+      "description": "Uma fórmula começa com o sinal de igual. Em =B2+B3+B4, cada referência aponta para uma célula que participa da soma. Se um desses valores muda, a fórmula recalcula o resultado automaticamente.",
+      "workedExample": "Com B2=15, B3=5 e B4=10, a fórmula =B2+B3+B4 apresenta R$ 30,00. Se B3 muda para 7, o resultado passa a R$ 32,00.",
+      "supportHeading": "Fórmula de soma",
+      "videoId": "m06-a03",
+      "videoCover": { "title": "=B2+B3+B4", "caption": "R$ 30,00  →  R$ 32,00" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

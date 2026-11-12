@@ -1,0 +1,89 @@
+{
+  "id": "m02",
+  "order": 2,
+  "title": "Organização de arquivos e pastas",
+  "shortTitle": "Arquivos e pastas",
+  "objective": "Criar pastas e organizar arquivos, compreendendo onde estão armazenados.",
+  "credits": "Conteúdo do módulo: Equipe 2 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m02.mp3",
+    "title": "Organização de arquivos e pastas",
+    "summary": "Área de trabalho, pastas e organização de arquivos em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Área de trabalho e janelas",
+        "text": "A área de trabalho reúne atalhos e ícones. A barra de tarefas ajuda a alternar entre programas abertos. Minimizar oculta a janela sem encerrar o programa; maximizar amplia a janela; fechar encerra aquela janela. Com o gerenciador de arquivos aberto, minimizar permite voltar à área de trabalho. Selecionar seu ícone na barra de tarefas exibe a janela novamente."
+      },
+      {
+        "heading": "Criando e nomeando pastas",
+        "text": "Um arquivo guarda um conteúdo, como um texto ou uma foto. Uma pasta reúne arquivos e pode conter outras pastas, chamadas subpastas. Nomes claros ajudam a reconhecer o assunto sem abrir cada item. A pasta Curso de Informática contém duas subpastas: Documentos e Imagens. Um texto pode ficar em Documentos, enquanto uma foto fica em Imagens."
+      },
+      {
+        "heading": "Organizando e localizando arquivos",
+        "text": "Copiar cria uma cópia no destino e preserva o original. Recortar e colar move o arquivo para outro lugar. A pasta Downloads costuma guardar os arquivos baixados. Observar o caminho da pasta ajuda a localizar o conteúdo. Um arquivo baixado está em Downloads. Ao copiá-lo para Documentos, ele passa a existir nos dois locais. Ao movê-lo, o arquivo deixa a pasta de origem."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Arquivos organizados, caminhos claros",
+    "main": {
+      "title": "Curso de Informática",
+      "text": "A pasta principal reúne os materiais do curso."
+    },
+    "items": [
+      { "title": "Documentos", "text": "Textos e PDFs ficam reunidos nesta subpasta.", "tag": "Subpasta" },
+      { "title": "Imagens", "text": "Fotos e ilustrações ficam reunidas nesta subpasta.", "tag": "Subpasta" }
+    ],
+    "highlight": {
+      "title": "Copiar e mover",
+      "text": "Copiar mantém o original e cria uma cópia no destino. Mover transfere o arquivo de um lugar para outro."
+    },
+    "longDescription": "Uma pasta principal chamada Curso de Informática contém duas subpastas: Documentos e Imagens. A separação por tipo de conteúdo facilita localizar os arquivos."
+  },
+  "lessons": [
+    {
+      "id": "m02-a01",
+      "moduleId": "m02",
+      "order": 1,
+      "title": "Área de trabalho e janelas",
+      "topics": "Área de trabalho, ícones, barra de tarefas; abrir, minimizar, maximizar e fechar janelas.",
+      "description": "A área de trabalho reúne atalhos e ícones. A barra de tarefas ajuda a alternar entre programas abertos. Minimizar oculta a janela sem encerrar o programa; maximizar amplia a janela; fechar encerra aquela janela.",
+      "workedExample": "Com o gerenciador de arquivos aberto, minimizar permite voltar à área de trabalho. Selecionar seu ícone na barra de tarefas exibe a janela novamente.",
+      "supportHeading": "Área de trabalho, barra de tarefas e janelas",
+      "videoId": "m02-a01",
+      "videoCover": { "title": "Área de trabalho", "caption": "Minimizar  ·  Maximizar  ·  Fechar" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m02-a02",
+      "moduleId": "m02",
+      "order": 2,
+      "title": "Criando e nomeando pastas",
+      "topics": "Diferença entre arquivo e pasta; pasta e subpasta; nomes que facilitam identificação.",
+      "description": "Um arquivo guarda um conteúdo, como um texto ou uma foto. Uma pasta reúne arquivos e pode conter outras pastas, chamadas subpastas. Nomes claros ajudam a reconhecer o assunto sem abrir cada item.",
+      "workedExample": "A pasta Curso de Informática contém duas subpastas: Documentos e Imagens. Um texto pode ficar em Documentos, enquanto uma foto fica em Imagens.",
+      "supportHeading": "Arquivos, pastas e subpastas",
+      "exampleHeading": "Exemplo de organização",
+      "videoId": "m02-a02",
+      "videoCover": { "title": "Curso de Informática", "caption": "Documentos     ·     Imagens" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m02-a03",
+      "moduleId": "m02",
+      "order": 3,
+      "title": "Organizando e localizando arquivos",
+      "topics": "Copiar, recortar e colar; diferença entre copiar e mover; pasta Downloads.",
+      "description": "Copiar cria uma cópia no destino e preserva o original. Recortar e colar move o arquivo para outro lugar. A pasta Downloads costuma guardar os arquivos baixados. Observar o caminho da pasta ajuda a localizar o conteúdo.",
+      "workedExample": "Um arquivo baixado está em Downloads. Ao copiá-lo para Documentos, ele passa a existir nos dois locais. Ao movê-lo, o arquivo deixa a pasta de origem.",
+      "supportHeading": "Copiar, mover e localizar",
+      "videoId": "m02-a03",
+      "videoCover": { "title": "Downloads → Documentos", "caption": "Copiar  ·  Recortar  ·  Colar" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "m05",
+  "order": 5,
+  "title": "Produção de documentos de texto",
+  "shortTitle": "Documentos de texto",
+  "objective": "Criar, formatar e salvar um documento simples.",
+  "credits": "Conteúdo do módulo: Equipe 5 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m05.mp3",
+    "title": "Produção de documentos de texto",
+    "summary": "Criação, formatação e salvamento de documentos em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Criando um documento",
+        "text": "Um documento começa em uma página em branco. O título apresenta o tema e os parágrafos organizam as ideias. Selecionar um trecho permite corrigir ou substituir apenas aquela parte do texto. O documento “Minha apresentação” pode começar com o texto fictício: “Meu nome é Ana. Quero aprender a utilizar o computador no dia a dia.”"
+      },
+      {
+        "heading": "Formatando o conteúdo",
+        "text": "Tamanho da fonte, negrito e alinhamento criam uma hierarquia visual. Um título destacado orienta a leitura; o alinhamento à esquerda organiza os parágrafos. Marcadores ajudam a apresentar itens relacionados. O título Minha apresentação aparece em negrito. Abaixo, um parágrafo alinhado à esquerda e uma lista apresentam os interesses de aprendizagem."
+      },
+      {
+        "heading": "Salvando e exportando",
+        "text": "Salvar mantém uma versão do arquivo no local escolhido. O formato editável permite novas alterações. Exportar ou baixar em PDF cria uma versão para leitura e compartilhamento. Nome e pasta devem facilitar sua localização. Minha_apresentacao é salvo na pasta Documentos em formato editável. A versão Minha_apresentacao.pdf permite compartilhar a leitura do mesmo conteúdo."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Da página em branco ao PDF",
+    "main": {
+      "title": "Minha apresentação",
+      "text": "Um documento simples, com título, parágrafo e lista, criado com dados fictícios."
+    },
+    "items": [
+      { "title": "Criar", "text": "O título apresenta o tema; os parágrafos organizam as ideias.", "tag": "Passo 1" },
+      { "title": "Formatar", "text": "Tamanho da fonte, negrito, alinhamento e marcadores criam hierarquia.", "tag": "Passo 2" },
+      { "title": "Salvar", "text": "Formato editável para alterar; PDF para ler e compartilhar.", "tag": "Passo 3" }
+    ],
+    "highlight": {
+      "title": "Nome e pasta",
+      "text": "Minha_apresentacao, salvo em Documentos, é fácil de localizar depois."
+    },
+    "longDescription": "O documento Minha apresentação percorre três passos: criar, com título e parágrafos; formatar, com tamanho da fonte, negrito, alinhamento e marcadores; e salvar, em formato editável ou em PDF. Um destaque lembra de escolher um nome claro e a pasta Documentos."
+  },
+  "lessons": [
+    {
+      "id": "m05-a01",
+      "moduleId": "m05",
+      "order": 1,
+      "title": "Criando um documento",
+      "topics": "Documento em branco; título e parágrafo; seleção e correção de trechos.",
+      "description": "Um documento começa em uma página em branco. O título apresenta o tema e os parágrafos organizam as ideias. Selecionar um trecho permite corrigir ou substituir apenas aquela parte do texto.",
+      "workedExample": "O documento “Minha apresentação” pode começar com o texto fictício: “Meu nome é Ana. Quero aprender a utilizar o computador no dia a dia.”",
+      "supportHeading": "Título, parágrafos e seleção",
+      "videoId": "m05-a01",
+      "videoCover": { "title": "Minha apresentação", "caption": "Meu nome é Ana." },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m05-a02",
+      "moduleId": "m05",
+      "order": 2,
+      "title": "Formatando o conteúdo",
+      "topics": "Tamanho da fonte, negrito, alinhamento e lista com marcadores.",
+      "description": "Tamanho da fonte, negrito e alinhamento criam uma hierarquia visual. Um título destacado orienta a leitura; o alinhamento à esquerda organiza os parágrafos. Marcadores ajudam a apresentar itens relacionados.",
+      "workedExample": "O título Minha apresentação aparece em negrito. Abaixo, um parágrafo alinhado à esquerda e uma lista apresentam os interesses de aprendizagem.",
+      "supportHeading": "Hierarquia visual do texto",
+      "videoId": "m05-a02",
+      "videoCover": { "title": "Minha apresentação", "caption": "Negrito  ·  Alinhamento  ·  Marcadores" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m05-a03",
+      "moduleId": "m05",
+      "order": 3,
+      "title": "Salvando e exportando",
+      "topics": "Nome e local do arquivo; documento editável e PDF; exportação ou download.",
+      "description": "Salvar mantém uma versão do arquivo no local escolhido. O formato editável permite novas alterações. Exportar ou baixar em PDF cria uma versão para leitura e compartilhamento. Nome e pasta devem facilitar sua localização.",
+      "workedExample": "Minha_apresentacao é salvo na pasta Documentos em formato editável. A versão Minha_apresentacao.pdf permite compartilhar a leitura do mesmo conteúdo.",
+      "supportHeading": "Formato editável e PDF",
+      "videoId": "m05-a03",
+      "videoCover": { "title": "Documentos / Minha_apresentacao", "caption": "Editável  ·  PDF" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

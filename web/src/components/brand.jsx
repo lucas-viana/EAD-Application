@@ -1,0 +1,39 @@
+import { Link } from 'react-router';
+
+/** Brand / Monitor e cursor — marca original do Figma. */
+export function BrandIcon({ className = 'brand__icon' }) {
+  return (
+    <svg className={className} viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+      <g transform="translate(3 5)">
+        <path
+          d="M3 0L3 1L27 1L27 0L27 -1L3 -1L3 0ZM27 0L27 1C28.1 1 29 1.9 29 3L30 3L31 3C31 0.79 29.21 -1 27 -1L27 0ZM30 3L29 3L29 20L30 20L31 20L31 3L30 3ZM30 20L29 20C29 21.1 28.1 22 27 22L27 23L27 24C29.21 24 31 22.21 31 20L30 20ZM27 23L27 22L3 22L3 23L3 24L27 24L27 23ZM3 23L3 22C1.9 22 1 21.1 1 20L0 20L-1 20C-1 22.21 0.79 24 3 24L3 23ZM0 20L1 20L1 3L0 3L-1 3L-1 20L0 20ZM0 3L1 3C1 1.9 1.9 1 3 1L3 0L3 -1C0.79 -1 -1 0.79 -1 3L0 3Z"
+          fill="var(--color-brand-roxo-profundo)"
+        />
+      </g>
+      <path
+        transform="translate(10 28)"
+        d="M8 0L7 0L7 5L8 5L9 5L9 0L8 0ZM0 7L0 8L18 8L18 7L18 6L0 6L0 7Z"
+        fill="var(--color-brand-roxo-profundo)"
+      />
+      <g transform="translate(21 15)">
+        <path d="M0 0L13 6L7 8L5 15L0 0Z" fill="var(--color-brand-coral)" />
+        <path
+          d="M0 0L0.31 -0.68L-1.26 -1.41L-0.71 0.24L0 0ZM13 6L13.24 6.71L15.03 6.11L13.31 5.32L13 6ZM7 8L6.76 7.29L6.39 7.41L6.28 7.79L7 8ZM5 15L4.29 15.24L5.06 17.54L5.72 15.21L5 15ZM0 0L-0.31 0.68L12.69 6.68L13 6L13.31 5.32L0.31 -0.68L0 0ZM13 6L12.76 5.29L6.76 7.29L7 8L7.24 8.71L13.24 6.71L13 6ZM7 8L6.28 7.79L4.28 14.79L5 15L5.72 15.21L7.72 8.21L7 8ZM5 15L5.71 14.76L0.71 -0.24L0 0L-0.71 0.24L4.29 15.24L5 15Z"
+          fill="var(--color-brand-roxo-profundo)"
+        />
+      </g>
+    </svg>
+  );
+}
+
+export function Brand() {
+  return (
+    <Link to="/" className="brand" aria-label="Informática Básica — página inicial">
+      <BrandIcon />
+      <span className="brand__text" aria-hidden="true">
+        <span className="brand__name">Informática Básica</span>
+        <span className="brand__tagline">primeiros passos no mundo digital</span>
+      </span>
+    </Link>
+  );
+}

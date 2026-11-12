@@ -1,0 +1,110 @@
+/*
+ * Informática Básica / Core — variáveis do design system (Figma, página 01).
+ * Não escolher cores aproximadas no código: usar sempre estes tokens.
+ */
+:root {
+  /* Color / Brand */
+  --color-brand-roxo-profundo: #260b8c;
+  --color-brand-roxo-vibrante: #3711bf;
+  --color-brand-indigo: #0e1655;
+  --color-brand-coral: #f2484b;
+
+  /* Color / Surface */
+  --color-surface-fundo: #f8f9fc;
+  --color-surface-branco: #ffffff;
+  --color-surface-suave: #ebebf5;
+  --color-surface-coral-suave: #fff0f0;
+  --color-surface-sucesso-suave: #e8f6ef;
+
+  /* Color / Border */
+  --color-border-default: #d5d0e6;
+
+  /* Color / Text */
+  --color-text-principal: #253352;
+  --color-text-secundario: #64748b;
+  --color-text-auxiliar: #9ca3af;
+  --color-text-sucesso-forte: #087657;
+
+  /* Color / Feedback */
+  --color-feedback-sucesso: #148a64;
+  --color-feedback-aviso: #f59e0b;
+  --color-feedback-erro: #d92d46;
+
+  /* Color / Interaction */
+  --color-interaction-focus: #3711bf;
+  /* Coral de marca leva texto índigo; para texto branco sobre coral, usar CTA Accessible. */
+  --color-interaction-cta-accessible: #bc2835;
+
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  /* Radius */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-pill: 999px;
+
+  /* Breakpoints (referência; media queries usam os valores literais) */
+  --breakpoint-mobile-minimum: 320px;
+  --breakpoint-mobile-base: 390px;
+  --breakpoint-mobile-wide: 428px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
+
+  /* Motion */
+  --motion-fast: 120ms;
+  --motion-default: 200ms;
+
+  /* Accessibility */
+  --accessibility-target: 48px;
+  --accessibility-focus-width: 2px;
+  --opacity-disabled: 0.55;
+
+  /* Typography — Inter */
+  --font-family: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-display: 700 40px/48px var(--font-family);
+  --text-display-mobile: 700 32px/39px var(--font-family);
+  --text-section: 700 30px/36px var(--font-family);
+  --text-heading: 600 24px/31px var(--font-family);
+  --text-card-title: 600 22px/1.45 var(--font-family);
+  --text-lead: 400 18px/27px var(--font-family);
+  --text-body-large: 400 18px/1.45 var(--font-family);
+  --text-body: 400 16px/24px var(--font-family);
+  --text-label: 600 16px/21px var(--font-family);
+  --text-caption: 400 14px/20px var(--font-family);
+  --text-tiny: 400 12px/1.45 var(--font-family);
+
+  /* Layout */
+  --layout-max-width: 1312px;
+  --layout-gutter: var(--space-64);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --layout-gutter: var(--space-24);
+  }
+}
+
+@media (max-width: 359px) {
+  :root {
+    --layout-gutter: var(--space-16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-default: 0ms;
+  }
+}

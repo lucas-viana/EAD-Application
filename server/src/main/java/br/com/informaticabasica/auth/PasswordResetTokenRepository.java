@@ -1,0 +1,24 @@
+package br.com.informaticabasica.auth;
+
+import java.time.Instant;
+import java.util.Optional;
+import java.util.UUID;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+public interface PasswordResetTokenRepository extends JpaRepository<PasswordResetToken, UUID> {
+
+  @Query("select t from PasswordResetToken t join fetch t.user where t.tokenHash = :hash")
+  Optional<PasswordResetToken> findByTokenHash(@Param("hash") String tokenHash);
+
+  /** Invalida pedidos anteriores ainda abertos, para que apenas o link mais recente funcione. */
+  @Modifying
+  @Query("update PasswordResetToken t set t.usedAt = :now where t.user.id = :userId and t.usedAt is null")
+  int invalidateOpenForUser(@Param("userId") UUID userId, @Param("now") Instant now);
+
+  @Modifying
+  @Query("delete from PasswordResetToken t where t.expiresAt < :cutoff")
+  int deleteExpiredBefore(@Param("cutoff") Instant cutoff);
+}

@@ -1,0 +1,563 @@
+/* ---------- Brand / Monitor e cursor ---------- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-12);
+  min-height: var(--accessibility-target);
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-medium);
+}
+
+.brand__icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand__name {
+  font: 600 20px/1.45 var(--font-family);
+  color: var(--color-brand-roxo-profundo);
+  white-space: nowrap;
+}
+
+.brand__tagline {
+  font: 400 12px/1.45 var(--font-family);
+  color: var(--color-text-principal);
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .brand {
+    gap: 9px;
+  }
+
+  .brand__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand__name {
+    font-size: 17px;
+  }
+
+  .brand__tagline {
+    font-size: 11px;
+  }
+}
+
+/* ---------- Button / Accent · Navigation / Item · Ação ---------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-12);
+  min-height: 52px;
+  min-width: var(--accessibility-target);
+  padding: var(--space-12) var(--space-16);
+  border: 0;
+  border-radius: var(--radius-medium);
+  font: var(--text-label);
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--motion-fast) ease,
+    color var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease;
+}
+
+.button--primary {
+  background: var(--color-brand-roxo-vibrante);
+  color: var(--color-surface-branco);
+}
+
+.button--primary:hover {
+  background: var(--color-brand-roxo-profundo);
+}
+
+.button--secondary {
+  background: var(--color-surface-branco);
+  color: var(--color-brand-roxo-profundo);
+}
+
+.button--secondary:hover {
+  background: var(--color-surface-suave);
+}
+
+/* Coral de marca com texto índigo (contraste adequado). */
+.button--accent {
+  background: var(--color-brand-coral);
+  color: var(--color-brand-indigo);
+}
+
+.button--accent:hover {
+  background: color-mix(in srgb, var(--color-brand-coral) 85%, var(--color-surface-branco));
+}
+
+.button--danger {
+  background: var(--color-interaction-cta-accessible);
+  color: var(--color-surface-branco);
+}
+
+.button--danger:hover {
+  background: var(--color-feedback-erro);
+}
+
+/* Em superfícies brancas, a ação secundária ganha fundo suave para continuar identificável. */
+.surface .button--secondary,
+.button--secondary.button--on-white {
+  background: var(--color-surface-suave);
+}
+
+.surface .button--secondary:hover,
+.button--secondary.button--on-white:hover {
+  background: var(--color-border-default);
+}
+
+/* Sobre o painel escuro do vídeo e o bloco suave da apresentação, a ação secundária é branca (Figma). */
+.surface--dark .button--secondary,
+.surface--soft .button--secondary {
+  background: var(--color-surface-branco);
+}
+
+.surface--dark .button--secondary:hover,
+.surface--soft .button--secondary:hover {
+  background: var(--color-surface-suave);
+}
+
+.surface--dark :focus-visible {
+  outline-color: var(--color-surface-branco);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button[disabled],
+.button[aria-disabled='true'] {
+  opacity: var(--opacity-disabled);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button[aria-busy='true'] {
+  cursor: progress;
+}
+
+.button--wide {
+  min-width: 300px;
+}
+
+.button--block {
+  width: 100%;
+}
+
+.button__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button__spinner {
+    animation-duration: 2400ms;
+  }
+}
+
+@media (max-width: 767px) {
+  .button--wide {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* ---------- Input / Accessible ---------- */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-16);
+  background: var(--color-surface-branco);
+  border-radius: var(--radius-medium);
+}
+
+.field__label {
+  font: var(--text-label);
+  line-height: 1.45;
+  color: var(--color-text-principal);
+}
+
+.field__control {
+  width: 100%;
+  min-height: var(--accessibility-target);
+  padding: var(--space-12);
+  border: 1px solid var(--color-text-secundario);
+  border-radius: var(--radius-small);
+  background: var(--color-surface-branco);
+  font: var(--text-body);
+  color: var(--color-text-principal);
+}
+
+.field__control::placeholder {
+  color: var(--color-text-secundario);
+  opacity: 1;
+}
+
+.field__control:focus-visible {
+  outline: none;
+  border-color: var(--color-interaction-focus);
+  box-shadow: 0 0 0 1px var(--color-interaction-focus);
+}
+
+.field__control[disabled] {
+  opacity: var(--opacity-disabled);
+  cursor: not-allowed;
+}
+
+.field__hint {
+  font: var(--text-caption);
+  color: var(--color-text-principal);
+}
+
+.field--error .field__control {
+  border-color: var(--color-feedback-erro);
+}
+
+.field--error .field__control:focus-visible {
+  box-shadow: 0 0 0 1px var(--color-feedback-erro);
+}
+
+.field__error {
+  font: var(--text-caption);
+  color: var(--color-feedback-erro);
+}
+
+.field__password {
+  position: relative;
+  display: flex;
+}
+
+.field__password .field__control {
+  padding-right: 96px;
+}
+
+.field__toggle {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 40px;
+  padding: 0 var(--space-12);
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--color-brand-roxo-profundo);
+  font: var(--text-label);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.field__toggle:hover {
+  background: var(--color-surface-suave);
+}
+
+/* ---------- Learning / Content card ---------- */
+.card-grid {
+  display: grid;
+  gap: var(--space-24);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+}
+
+.card-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  .card-grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .card-grid--3,
+  .card-grid--4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.content-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-24);
+  background: var(--color-surface-branco);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-large);
+  transition:
+    border-color var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease;
+}
+
+.content-card__title {
+  font: var(--text-card-title);
+  color: var(--color-brand-indigo);
+  overflow-wrap: anywhere;
+}
+
+.content-card__description {
+  font: var(--text-body-large);
+  color: var(--color-text-principal);
+}
+
+.content-card__action {
+  margin-top: auto;
+  font: var(--text-label);
+  line-height: 1.45;
+  color: var(--color-brand-roxo-profundo);
+}
+
+/* O cartão inteiro é clicável; o link fica no título para leitores de tela. */
+.content-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.content-card__link:focus-visible {
+  outline: none;
+}
+
+.content-card:has(.content-card__link:focus-visible) {
+  outline: var(--accessibility-focus-width) solid var(--color-interaction-focus);
+  outline-offset: 2px;
+}
+
+.content-card:has(.content-card__link):hover {
+  border-color: var(--color-brand-roxo-vibrante);
+  box-shadow: 0 4px 16px rgb(14 22 85 / 0.08);
+}
+
+.content-card--current {
+  border-color: var(--color-brand-roxo-vibrante);
+  border-width: 2px;
+  padding: calc(var(--space-24) - 1px);
+}
+
+.content-card--current .content-card__action {
+  color: var(--color-text-sucesso-forte);
+}
+
+/* ---------- Superfícies (blocos sem raio, como no Figma) ---------- */
+.surface {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-24);
+  background: var(--color-surface-branco);
+}
+
+.surface--soft {
+  background: var(--color-surface-suave);
+}
+
+.surface--dark {
+  background: var(--color-brand-indigo);
+  color: var(--color-surface-branco);
+}
+
+.surface--dark .heading {
+  color: var(--color-surface-branco);
+}
+
+/* ---------- Message / Success · Warning · Error · Info ---------- */
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-16);
+  border-radius: var(--radius-medium);
+  border-left: 4px solid;
+  font: var(--text-body);
+}
+
+.message__title {
+  font: var(--text-label);
+}
+
+.message--error {
+  background: var(--color-surface-coral-suave);
+  border-color: var(--color-feedback-erro);
+}
+
+.message--success {
+  background: var(--color-surface-sucesso-suave);
+  border-color: var(--color-feedback-sucesso);
+  color: var(--color-text-principal);
+}
+
+.message--info {
+  background: var(--color-surface-suave);
+  border-color: var(--color-brand-roxo-vibrante);
+}
+
+.message--warning {
+  background: color-mix(in srgb, var(--color-feedback-aviso) 12%, var(--color-surface-branco));
+  border-color: var(--color-feedback-aviso);
+}
+
+/* ---------- Cabeçalho ---------- */
+.site-header {
+  position: relative;
+  z-index: 10;
+  background: var(--color-surface-branco);
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-24);
+  min-height: 96px;
+  padding-block: var(--space-16);
+}
+
+.site-header__spacer {
+  flex: 1;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.site-nav__link[aria-current='page'] {
+  background: var(--color-surface-suave);
+}
+
+.site-header__menu-button {
+  display: none;
+}
+
+.site-menu {
+  display: none;
+}
+
+@media (max-width: 1079px) {
+  .site-header__bar {
+    min-height: 92px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .site-header__menu-button {
+    display: inline-flex;
+  }
+
+  .site-menu[data-open='true'] {
+    display: block;
+    border-top: 1px solid var(--color-surface-suave);
+    background: var(--color-surface-fundo);
+    padding-block: var(--space-24) var(--space-32);
+  }
+
+  .site-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-menu__list .button {
+    width: 100%;
+  }
+}
+
+/* ---------- Rodapé ---------- */
+.site-footer {
+  background: var(--color-brand-roxo-profundo);
+  color: var(--color-surface-branco);
+  padding-block: var(--space-24);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.site-footer__name {
+  font: var(--text-label);
+}
+
+.site-footer__tagline {
+  font: var(--text-caption);
+}
+
+/* ---------- Diversos ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-suave);
+  color: var(--color-brand-roxo-profundo);
+  font: var(--text-caption);
+  font-weight: var(--font-weight-semibold);
+}
+
+.badge--success {
+  background: var(--color-surface-sucesso-suave);
+  color: var(--color-text-sucesso-forte);
+}
+
+.badge--muted {
+  background: var(--color-surface-suave);
+  color: var(--color-text-secundario);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  color: var(--color-text-secundario);
+}

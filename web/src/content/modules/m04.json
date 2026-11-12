@@ -1,0 +1,89 @@
+{
+  "id": "m04",
+  "order": 4,
+  "title": "Comunicação por e-mail",
+  "shortTitle": "E-mail",
+  "objective": "Escrever e enviar mensagens claras, incluindo arquivos anexos.",
+  "credits": "Conteúdo do módulo: Equipe 4 • Informática Básica",
+  "podcast": {
+    "src": "/media/podcasts/m04.mp3",
+    "title": "Comunicação por e-mail",
+    "summary": "Ambiente de e-mail, mensagens e anexos em uma síntese para acompanhar pelo áudio.",
+    "transcript": [
+      {
+        "heading": "Conhecendo o ambiente de e-mail",
+        "text": "A caixa de entrada reúne mensagens recebidas. Enviados guarda as mensagens que já saíram da conta; rascunhos guarda mensagens em elaboração. Uma nova mensagem tem destinatário, assunto e corpo do texto. Uma mensagem iniciada e ainda não enviada pode aparecer em Rascunhos. Depois do envio, ela pode ser localizada em Enviados."
+      },
+      {
+        "heading": "Escrevendo e respondendo",
+        "text": "Um assunto específico facilita a identificação da mensagem. Saudação, pedido claro e assinatura organizam o texto. Responder envia a resposta ao remetente; responder a todos também inclui os demais destinatários. Assunto: Informações sobre o curso. Mensagem: Olá! Gostaria de saber os horários do curso de informática básica. Agradeço pela atenção. Ana."
+      },
+      {
+        "heading": "Trabalhando com anexos",
+        "text": "O anexo é um arquivo enviado junto à mensagem. O nome e o tamanho ajudam a conferir se o documento correto foi escolhido. Arquivos recebidos podem ser baixados; anexos inesperados exigem atenção à origem. Antes de enviar Minha_apresentacao.pdf, o nome do anexo confirma qual arquivo será encaminhado. Após baixar um anexo, ele pode aparecer em Downloads."
+      }
+    ]
+  },
+  "infographic": {
+    "src": null,
+    "title": "Mensagens claras, anexos conferidos",
+    "main": {
+      "title": "Caixa de e-mail",
+      "text": "Reúne as mensagens recebidas, enviadas e em elaboração."
+    },
+    "items": [
+      { "title": "Caixa de entrada", "text": "Mensagens recebidas.", "tag": "Pasta" },
+      { "title": "Enviados", "text": "Mensagens que já saíram da conta.", "tag": "Pasta" },
+      { "title": "Rascunhos", "text": "Mensagens iniciadas e ainda não enviadas.", "tag": "Pasta" }
+    ],
+    "highlight": {
+      "title": "Nova mensagem",
+      "text": "Destinatário, assunto e corpo do texto. Antes de enviar, confira o anexo pelo nome e pelo tamanho."
+    },
+    "longDescription": "A caixa de e-mail aparece com três pastas: Caixa de entrada, com mensagens recebidas; Enviados, com mensagens que já saíram da conta; e Rascunhos, com mensagens em elaboração. Um destaque mostra as partes de uma nova mensagem e lembra de conferir o anexo pelo nome e pelo tamanho."
+  },
+  "lessons": [
+    {
+      "id": "m04-a01",
+      "moduleId": "m04",
+      "order": 1,
+      "title": "Conhecendo o ambiente de e-mail",
+      "topics": "Caixa de entrada, enviados, rascunhos e lixeira; destinatário, assunto e corpo da mensagem.",
+      "description": "A caixa de entrada reúne mensagens recebidas. Enviados guarda as mensagens que já saíram da conta; rascunhos guarda mensagens em elaboração. Uma nova mensagem tem destinatário, assunto e corpo do texto.",
+      "workedExample": "Uma mensagem iniciada e ainda não enviada pode aparecer em Rascunhos. Depois do envio, ela pode ser localizada em Enviados.",
+      "supportHeading": "Pastas e partes de uma mensagem",
+      "videoId": "m04-a01",
+      "videoCover": { "title": "Caixa de entrada", "caption": "Enviados  ·  Rascunhos  ·  Lixeira" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m04-a02",
+      "moduleId": "m04",
+      "order": 2,
+      "title": "Escrevendo e respondendo",
+      "topics": "Assunto, saudação, mensagem e identificação; revisão do destinatário; responder e responder a todos.",
+      "description": "Um assunto específico facilita a identificação da mensagem. Saudação, pedido claro e assinatura organizam o texto. Responder envia a resposta ao remetente; responder a todos também inclui os demais destinatários.",
+      "workedExample": "Assunto: Informações sobre o curso. Mensagem: Olá! Gostaria de saber os horários do curso de informática básica. Agradeço pela atenção. Ana.",
+      "supportHeading": "Uma mensagem clara",
+      "videoId": "m04-a02",
+      "videoCover": { "title": "Informações sobre o curso", "caption": "Saudação  ·  Pedido  ·  Assinatura" },
+      "transcript": "",
+      "captions": null
+    },
+    {
+      "id": "m04-a03",
+      "moduleId": "m04",
+      "order": 3,
+      "title": "Trabalhando com anexos",
+      "topics": "Anexar, conferir e baixar arquivos; cuidados com anexos desconhecidos.",
+      "description": "O anexo é um arquivo enviado junto à mensagem. O nome e o tamanho ajudam a conferir se o documento correto foi escolhido. Arquivos recebidos podem ser baixados; anexos inesperados exigem atenção à origem.",
+      "workedExample": "Antes de enviar Minha_apresentacao.pdf, o nome do anexo confirma qual arquivo será encaminhado. Após baixar um anexo, ele pode aparecer em Downloads.",
+      "supportHeading": "Anexar, conferir e baixar",
+      "videoId": "m04-a03",
+      "videoCover": { "title": "Minha_apresentacao.pdf", "caption": "Anexar  ·  Conferir  ·  Baixar" },
+      "transcript": "",
+      "captions": null
+    }
+  ]
+}

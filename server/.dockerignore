@@ -1,0 +1,5 @@
+target
+media
+*.iml
+.idea
+.vscode

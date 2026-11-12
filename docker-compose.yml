@@ -1,0 +1,47 @@
+name: informatica-basica
+
+services:
+  # API Java (Spring Boot): autenticação e sessão, vídeos protegidos e registro de acessos.
+  server:
+    build: ./server
+    env_file: .env
+    environment:
+      MEDIA_DIR: /app/media/videos
+    volumes:
+      # Vídeos das aulas: media/videos/m01-a01.mp4 … m06-a03.mp4 (somente com VIDEO_PROVIDER=local).
+      - ./media/videos:/app/media/videos:ro
+    depends_on:
+      db:
+        condition: service_healthy
+        required: false
+    restart: unless-stopped
+
+  # Front-end React servido pelo nginx, que também encaminha /api para o contêiner "server".
+  web:
+    build: ./web
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    depends_on:
+      server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # PostgreSQL local opcional, para desenvolvimento sem Supabase:
+  #   docker compose --profile local-db up --build
+  db:
+    image: postgres:17-alpine
+    profiles: ["local-db"]
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgdata:

@@ -1,0 +1,23 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências e builds
+node_modules/
+web/dist/
+server/target/
+
+# Mídias (versionar apenas a estrutura)
+media/videos/*
+!media/videos/.gitkeep
+!media/videos/README.md
+web/public/media/podcasts/*.mp3
+web/public/media/infographics/*
+
+# IDEs e sistema
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
