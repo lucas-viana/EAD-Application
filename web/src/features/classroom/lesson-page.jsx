@@ -79,6 +79,13 @@ export function LessonPage() {
 
       <div className="lesson-layout">
         <div className="lesson-layout__main">
+          <section className="surface" id="objetivo" aria-labelledby="objetivo-titulo" tabIndex={-1}>
+            <h2 id="objetivo-titulo" className="heading">
+              Objetivo
+            </h2>
+            <p className="prose">{lesson.topics || module.objective}</p>
+          </section>
+
           <div id="video" tabIndex={-1}>
             <VideoPlayer
               lesson={lesson}
@@ -113,6 +120,15 @@ export function LessonPage() {
                 Ampliar infográfico
               </Button>
             </div>
+          </section>
+
+          <section className="surface" id="pratica" aria-labelledby="pratica-titulo" tabIndex={-1}>
+            <h2 id="pratica-titulo" className="heading">
+              Prática
+            </h2>
+            <p className="prose">
+              {lesson.practice || module.practice?.description || 'Experimente os conceitos desta aula no seu computador ou celular, no seu próprio ritmo e sem envio de tarefas ou avaliação.'}
+            </p>
           </section>
         </div>
 

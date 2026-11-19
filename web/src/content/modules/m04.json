@@ -42,6 +42,10 @@
     },
     "longDescription": "A caixa de e-mail aparece com três pastas: Caixa de entrada, com mensagens recebidas; Enviados, com mensagens que já saíram da conta; e Rascunhos, com mensagens em elaboração. Um destaque mostra as partes de uma nova mensagem e lembra de conferir o anexo pelo nome e pelo tamanho."
   },
+  "practice": {
+    "title": "Prática guiada de e-mail",
+    "description": "Experimente redigir mensagens, organizar pastas e conferir anexos no seu provedor de e-mail habitual, no seu próprio ritmo e sem envio obrigatório."
+  },
   "lessons": [
     {
       "id": "m04-a01",
@@ -55,7 +59,8 @@
       "videoId": "m04-a01",
       "videoCover": { "title": "Caixa de entrada", "caption": "Enviados  ·  Rascunhos  ·  Lixeira" },
       "transcript": "",
-      "captions": null
+      "captions": null,
+      "practice": "Abra seu provedor de e-mail e localize as pastas Caixa de entrada, Enviados e Rascunhos. Inicie uma nova mensagem e feche-a para observá-la salva em Rascunhos."
     },
     {
       "id": "m04-a02",
@@ -69,7 +74,8 @@
       "videoId": "m04-a02",
       "videoCover": { "title": "Informações sobre o curso", "caption": "Saudação  ·  Pedido  ·  Assinatura" },
       "transcript": "",
-      "captions": null
+      "captions": null,
+      "practice": "Experimente redigir uma mensagem: coloque um assunto objetivo, uma saudação educada, um parágrafo com seu pedido e finalize com sua assinatura."
     },
     {
       "id": "m04-a03",
@@ -83,7 +89,8 @@
       "videoId": "m04-a03",
       "videoCover": { "title": "Minha_apresentacao.pdf", "caption": "Anexar  ·  Conferir  ·  Baixar" },
       "transcript": "",
-      "captions": null
+      "captions": null,
+      "practice": "Pratique anexar um documento de teste a um rascunho de mensagem. Confira se o nome e o tamanho do arquivo correspondem ao esperado antes de decidir enviar."
     }
   ]
 }

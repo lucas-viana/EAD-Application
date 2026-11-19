@@ -58,6 +58,17 @@ describe('aula sem sessão', () => {
     const login = await screen.findByRole('link', { name: 'Entrar para assistir' });
     expect(login).toHaveAttribute('href', '/entrar?returnTo=%2Faulas%2Fm02-a02');
   });
+
+  it('exibe objetivo, vídeo, texto, podcast, infográfico, prática e navegação (E4)', async () => {
+    renderAt('/aulas/m04-a01');
+    expect(await screen.findByRole('heading', { level: 1, name: 'Conhecendo o ambiente de e-mail' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Objetivo' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Texto descritivo' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Podcast do módulo' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Infográfico do módulo' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'Prática' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Próxima aula' })).toHaveAttribute('href', '/aulas/m04-a02');
+  });
 });
 
 describe('login pelo vídeo', () => {
